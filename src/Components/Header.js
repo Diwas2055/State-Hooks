@@ -6,7 +6,7 @@ export class Header extends Component {
         // this.props.data="hello react";
         return (
          <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"blue",color:"#fff"}}>
-  <a className="navbar-brand" style={{color:"#fff"}}>
+         <a className="navbar-brand" style= {{color:"#fff"}}>
       {this.props.title}
   </a>
   
