@@ -13,21 +13,9 @@ class App extends React.Component {
     ],
     showHide:false
   };
-  handleClick = () =>{
-    // this.state.showHide=true;
-    this.setState({showHide: !this.state.showHide})
-
-  }
-  render(){
-    console.log(this.state.showHide);
-    // console.log(this.state.contact);
-    // //for loop
-    // for(let i=0;i<this.state.contact.length;i++){
-    //   console.log(this.state.contact[i])
-    // }
+    render(){    
   return ( 
-  <div > 
-    <button type="button" onClick={this.handleClick} >Show</button>
+  <div>     
      <Header title="Contact Management System"/>
    {this.state.contact.map((contact)=><Content  
    contact={contact} />
